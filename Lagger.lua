@@ -10,6 +10,132 @@ local LocalPlayer = Players.LocalPlayer
 local PREMIER_USERS = {
     [LocalPlayer.UserId] = "2099/12/31",
 }
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+	local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
+
+local PREMIER_USERS = {
+    [LocalPlayer.UserId] = "2099/12/31",
+}
 
 local function isPremier(player)
     local expiryDate = PREMIER_USERS[player.UserId]
