@@ -395,3 +395,124 @@ cmdToggleButton.MouseButton1Click:Connect(function()
         end)
     end)
 end)
+
+spawn(function()
+		task.wait(5)
+
+		local ScreenGui = Instance.new("ScreenGui")
+		ScreenGui.Name = "idkk"
+		ScreenGui.ResetOnSpawn = false
+		ScreenGui.DisplayOrder = 2147483647
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+		local success, result = pcall(function()
+			return gethui and gethui() or game:GetService("CoreGui")
+		end)
+
+		if success and result then
+			ScreenGui.Parent = result
+		else
+			ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+		end
+
+		local BlurEffect = Instance.new("BlurEffect")
+		BlurEffect.Size = 0
+		BlurEffect.Parent = game:GetService("Lighting")
+
+		local frame = Instance.new("Frame")
+		frame.Size = UDim2.new(0, 0, 0, 0)
+		frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+		frame.AnchorPoint = Vector2.new(0.5, 0.5)
+		frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		frame.ClipsDescendants = true
+		frame.ZIndex = 1
+		frame.Parent = ScreenGui
+
+		local corner = Instance.new("UICorner")
+		corner.CornerRadius = UDim.new(0, 14)
+		corner.Parent = frame
+
+		local stroke = Instance.new("UIStroke")
+		stroke.Color = darkColors
+		stroke.Thickness = 2.5
+		stroke.Parent = frame
+
+		local title = Instance.new("TextLabel")
+		title.Size = UDim2.new(1, 0, 0, 60)
+		title.BackgroundTransparency = 1
+		title.Text = "🚨 TVX TEAM 🚨"
+		title.TextColor3 = Color3.fromRGB(capturedR, secondaryCapturedG, b)
+		title.Font = Enum.Font.GothamBlack
+		title.TextSize = 28
+		title.ZIndex = 2
+		title.Parent = frame
+
+		local body = Instance.new("TextLabel")
+		body.Size = UDim2.new(1, -40, 1, -70)
+		body.Position = UDim2.new(0, 20, 0, 60)
+		body.BackgroundTransparency = 1
+		body.Text = "🚨 إعلان هام 🚨\n\nرجاء خش الديسكورد لاهنت ابي دعم منك الله يسعدك ولا تنسى ترسل لي اخوياك ترا اذا مشيت على هذا الحال بدون ما تسوي شي حياتك بتصير اسوء مدري وش دخل بس رجاء خش الدس\n\nUser discord: @t_v_x 🇸🇦"
+		body.Font = Enum.Font.GothamBold
+		body.TextColor3 = Color3.fromRGB(240, 240, 240)
+		body.TextSize = 20
+		body.TextWrapped = true
+		body.TextYAlignment = Enum.TextYAlignment.Top
+		body.ZIndex = 2
+		body.Parent = frame
+
+		local glow = Instance.new("Frame")
+		glow.Size = UDim2.new(0, 120, 1.5, 0)
+		glow.Position = UDim2.new(-0.3, 0, -0.25, 0)
+		glow.Rotation = 20
+		glow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		glow.BorderSizePixel = 0
+		glow.ZIndex = 3
+		glow.Parent = frame
+
+		local glowGradient = Instance.new("UIGradient")
+		glowGradient.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255))
+		glowGradient.Transparency = NumberSequence.new({
+			NumberSequenceKeypoint.new(0, 1),
+			NumberSequenceKeypoint.new(0.5, 0.4),
+			NumberSequenceKeypoint.new(1, 1)
+		})
+		glowGradient.Parent = glow
+
+		game:GetService("TweenService"):Create(frame, TweenInfo.new(0.7, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+			Size = UDim2.new(0, 550, 0, 320)
+		}):Play()
+
+		game:GetService("TweenService"):Create(BlurEffect, TweenInfo.new(0.7), {
+			Size = 24
+		}):Play()
+
+		task.delay(0.5, function()
+			game:GetService("TweenService"):Create(glow, TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
+				Position = UDim2.new(1.2, 0, -0.5, 0)
+			}):Play()
+		end)
+
+		task.delay(5, function()
+			game:GetService("TweenService"):Create(frame, TweenInfo.new(0.6, Enum.EasingStyle.Back, Enum.EasingDirection.In), {
+				Size = UDim2.new(0, 0, 0, 0)
+			}):Play()
+
+			game:GetService("TweenService"):Create(BlurEffect, TweenInfo.new(0.6), {
+				Size = 0
+			}):Play()
+
+			task.wait(0.6)
+			ScreenGui:Destroy()
+			BlurEffect:Destroy()
+		end)
+	end)
+
+for _, btn in pairs(getgenv().TVX:GetDescendants()) do
+    if btn:IsA("TextButton") or btn:IsA("ImageButton") then
+        if not btn:FindFirstChildOfClass("UICorner") then
+            local corner = Instance.new("UICorner")
+            corner.CornerRadius = UDim.new(0, 7)
+            corner.Parent = btn
+        end
+    end
+end)
