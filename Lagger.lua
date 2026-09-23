@@ -127,14 +127,14 @@ local PREMIER_USERS = {
     [LocalPlayer.UserId] = "2099/12/31",
 }
 local PREMIER_USERS = {
-    [LocalPlayer.UserId] = "2099/12/31",
+    [11678900252] = "2099/12/31",
 }
 local PREMIER_USERS = {
-    [LocalPlayer.UserId] = "2099/12/31",
+    [2011437733] = "2099/12/31",
 }
 
 local PREMIER_USERS = {
-    [LocalPlayer.UserId] = "2099/12/31",
+    [8208113961] = "2099/12/31",
 }
 
 local function isPremier(player)
